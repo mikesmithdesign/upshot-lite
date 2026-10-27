@@ -1,0 +1,239 @@
+<!doctype html>
+<!--
+  Upshot Lite: free one-page template for AI agent platforms.
+
+  Free for personal and commercial use, including unlimited client projects.
+  Free directories may host and redistribute it with credit. No resale.
+  Full terms in LICENSE.md.
+
+  The full Upshot theme adds the rest of the pages, the JSON content layer
+  and the live workflow engine:
+  https://mikesmithdesign.co.uk/themes/upshot
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Upshot, the AI agent platform for operations teams</title>
+<meta name="description" content="Upshot is an AI agent platform for operations teams. It watches the systems you already run, finds the pattern behind each repeat problem, and does the follow-up work. Book a free 30 day pilot.">
+<link rel="stylesheet" href="fonts.css">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="head" id="head">
+  <div class="wrap">
+    <a class="wm" href="#top"><i aria-hidden="true"></i>Upshot</a>
+    <nav class="nav" aria-label="Main">
+      <a href="#proof">Proof</a>
+      <a href="#pilot">Pilot</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">Questions</a>
+    </nav>
+    <div class="head-r">
+      <a class="btn sm" href="#book">Book a pilot</a>
+      <details class="mnav">
+        <summary>Menu</summary>
+        <nav aria-label="Mobile">
+          <a href="#proof">Proof</a><a href="#pilot">Pilot</a><a href="#pricing">Pricing</a><a href="#faq">Questions</a><a href="#book">Book a pilot</a>
+        </nav>
+      </details>
+    </div>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+  <section class="hero" id="top">
+    <canvas id="field" aria-hidden="true"></canvas>
+    <div class="wrap">
+      <h1>Acts on what keeps showing up in your data.</h1>
+      <div class="copy">
+        <p class="sub">Upshot is an AI agent platform for operations teams. It watches the systems you already run, finds the pattern behind each repeat problem, and does the <span class="nb">follow-up work.</span></p>
+        <div class="ctas"><a class="btn" href="#book">Book a pilot</a><a class="link" href="#proof">See the proof</a></div>
+        <div class="key" aria-label="Shape key">
+          <span class="ka">Agent</span><span class="ko">System</span><span class="kh">Person</span><span class="kd">Decision</span>
+        </div>
+      </div>
+      <div class="plate" data-engine>
+        <div class="plate-top"><span>Support, one ticket spike</span><button class="pause" id="pause" type="button" aria-pressed="false">Pause</button></div>
+        <div>
+        <svg viewBox="0 0 764 318" role="img" aria-label="An agent workflow diagram: a ticket spike triggers a triage agent that reads help docs and old tickets, drafts replies, a bug report and a doc fix in parallel, and sends all three to the support lead for sign-off before anything is sent.">
+          <defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="ah" d="M0 1 9 5 0 9z"/></marker></defs>
+          <g id="edges"></g><g id="flow"></g><g id="nodes"></g>
+        </svg>
+        <div class="trace"><span id="trace"><b>Watching:</b> your systems</span><i id="tag"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pilots" aria-label="Pilot customers">
+    <div class="wrap">
+      <p>In pilots with teams in freight, software, healthcare, finance and manufacturing</p>
+      <div class="logos">
+        <span class="logo"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M2 16 11 4l9 12z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/></svg>Harrow Freight</span>
+        <span class="logo"><svg viewBox="0 0 22 22" aria-hidden="true"><circle cx="11" cy="11" r="8" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M11 3v16" stroke="currentColor" stroke-width="2.4"/></svg>Copperline</span>
+        <span class="logo"><svg viewBox="0 0 22 22" aria-hidden="true"><rect x="3" y="3" width="7" height="16" rx="1.5" fill="currentColor"/><rect x="12" y="8" width="7" height="11" rx="1.5" fill="currentColor"/></svg>Tiller</span>
+        <span class="logo"><svg viewBox="0 0 22 22" aria-hidden="true"><path d="M3 11h16M11 3v16" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>Lumen Clinics</span>
+        <span class="logo"><svg viewBox="0 0 22 22" aria-hidden="true"><rect x="3" y="3" width="16" height="16" rx="5" fill="none" stroke="currentColor" stroke-width="2.4"/><circle cx="11" cy="11" r="3" fill="currentColor"/></svg>Brookfield Plastics</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="opener" aria-label="What Upshot does">
+    <div class="wrap">
+      <p id="tagline">Your team fixes the same problems every month. Upshot spots the pattern, drafts the fix and asks before it acts.</p>
+    </div>
+  </section>
+
+  <div class="band dither" aria-hidden="true"></div>
+
+  <section class="sec proof" id="proof">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="h2">Everything it does, you can check.</h2>
+        <p class="lead">Figures from five pilot customers. You see your own from the first week.</p>
+      </div>
+      <div class="bento">
+        <div class="tile t-cost"><b class="big">$0.14</b><p>median model and tool spend on a run, shown on the run itself</p></div>
+        <div class="tile t-fast"><b class="big">27s</b><p>median time from a trigger to a proposed fix</p></div>
+        <div class="tile t-safe"><h3>Never trained on your data.</h3><ul class="ticks"><li>Model providers contracted to zero retention</li><li>Runs in your own cloud on Scale</li><li>Delete any run and everything it read</li></ul></div>
+        <div class="tile t-orbit">
+          <div class="t-copy"><h3>Connects to the tools you run now.</h3><p>Read-only to start. It writes only through the actions you switch on.</p></div>
+          <div class="orbit" aria-hidden="true"><div class="ring-o"><span>CRM</span><span>Helpdesk</span><span>ERP</span><span>Tracker</span><span>Docs</span><span>Chat</span><span>TMS</span><span>Any API</span></div><b>Upshot</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec pilot inv" id="pilot">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="h2">Live in four weeks, with a founder beside you.</h2>
+        <p class="lead">Ines Carvalho and Kwame Osei run every pilot themselves, in a shared channel with a call each week.</p>
+      </div>
+      <ol class="weeks" id="weeks">
+        <li><b>Week 1</b><span>Connect two or three systems with read access</span></li>
+        <li><b>Weeks 2 and 3</b><span>Upshot proposes, nothing changes</span></li>
+        <li><b>Week 4</b><span>Your team switches on what it trusts</span></li>
+        <li><b>After</b><span>Review every run, then decide</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec pricing" id="pricing">
+    <div class="wrap">
+      <div class="top">
+        <h2 class="h2">Free to pilot. Then pay for the runs you use.</h2>
+        <p class="lead">A run is one problem taken from trigger to finished action. Reading, retries and sign-offs inside it are included.</p>
+      </div>
+      <div class="calc">
+        <div>
+          <label for="runs">Runs a month</label>
+          <div class="runs"><span id="runsOut">2,500</span><small>runs</small></div>
+          <input id="runs" type="range" min="500" max="20000" step="250" value="2500" aria-describedby="calcNote">
+          <div class="scale" aria-hidden="true"><span id="minOut">500</span><span id="maxOut">20,000</span></div>
+        </div>
+        <div class="out">
+          <div class="row"><span>Team plan</span><b id="baseOut">$490</b></div>
+          <div class="row"><span id="extraLabel">1,500 runs over the 1,000 included</span><b id="extraOut">$450</b></div>
+          <div class="row big"><span>A month</span><b id="totalOut" aria-live="polite">$940</b></div>
+          <p class="note" id="calcNote">$0.30 a run after the first 1,000. Above 20,000 runs a month, Scale pricing is usually cheaper.</p>
+        </div>
+      </div>
+      <div class="tiers">
+        <div class="tier">
+          <h3>Pilot</h3>
+          <div class="price">Free <small>for 30 days</small></div>
+          <p>One workflow, set up with you, on one problem your team is tired of fixing.</p>
+          <ul><li>Read-only for the first three weeks</li><li>Weekly review call with a founder</li><li>Your run log and evals from day one</li></ul>
+          <a class="btn" href="#book">Book a pilot</a>
+        </div>
+        <div class="tier rec">
+          <h3>Team</h3>
+          <div class="price">$490 <small>a month</small></div>
+          <p>For teams running Upshot on a few workflows every day.</p>
+          <ul><li>1,000 runs included, then $0.30 a run</li><li>Up to 10 workflows</li><li>Sign-off rules per action and per amount</li><li>Run log kept for a year</li></ul>
+          <a class="btn" href="#book">Book a pilot</a>
+        </div>
+        <div class="tier">
+          <h3>Scale</h3>
+          <div class="price">Custom</div>
+          <p>For high volume, your own cloud, or a security review before you start.</p>
+          <ul><li>Runs in your cloud account</li><li>Single sign-on and audit log streaming</li><li>Data kept in your region</li></ul>
+          <a class="link" href="#book">Book a pilot</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec faq inv" id="faq">
+    <div class="wrap">
+      <h2 class="h2">Questions before a pilot.</h2>
+      <div class="qs">
+        <details><summary>What does a run actually cost us?</summary><p>On Team, $0.30 a run after the first 1,000 each month. Model and tool calls are included, so there is no second bill from a model provider. Model and tool spend in our pilots has a median of $0.14 a run, and every run shows its own cost.</p></details>
+        <details><summary>What happens when it gets something wrong?</summary><p>Anything that changes a system, or spends more than the limit you set, waits for a sign-off, so a wrong proposal gets rejected rather than carried out. Rejections and edits feed the evals, and you can see the approval rate per workflow.</p></details>
+        <details><summary>Which models does it use?</summary><p>We pick the model per step, a larger one for diagnosis and smaller ones for reading and formatting. On Scale you can bring your own provider keys.</p></details>
+        <details><summary>Can it act without approval?</summary><p>Only for actions you mark as safe, such as posting a summary to a channel. Anything else needs a person, and you decide which person.</p></details>
+        <details><summary>What happens after the pilot?</summary><p>We review every run with you. If it earned its place, you move to Team and keep your workflows and run log. If not, we delete your data and you owe nothing.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec closer" id="book">
+    <div class="wrap">
+      <h2>What does your team keep fixing by hand?</h2>
+      <div class="card">
+        <div class="side">
+          <p>Tell us about it in a sentence or two. We will tell you on the first call whether Upshot can take it on.</p>
+          <div class="promise"><span>Free for 30 days</span><span>Read-only for the first three weeks</span><span>Run by a founder, start to finish</span></div>
+        </div>
+        <div>
+          <form id="pilotForm" novalidate>
+            <div class="field">
+              <label for="fProblem">The problem</label>
+              <textarea id="fProblem" name="problem" required aria-describedby="eProblem" placeholder="For example, the same billing error keeps coming in as tickets"></textarea>
+              <span class="err" id="eProblem">Tell us the problem in a sentence or two.</span>
+            </div>
+            <div class="f2">
+              <div class="field"><label for="fName">Your name</label><input id="fName" name="name" autocomplete="name" required aria-describedby="eName"><span class="err" id="eName">Add your name.</span></div>
+              <div class="field"><label for="fCompany">Company</label><input id="fCompany" name="company" autocomplete="organization" required aria-describedby="eCompany"><span class="err" id="eCompany">Add your company.</span></div>
+            </div>
+            <div class="field">
+              <label for="fEmail">Work email</label>
+              <input id="fEmail" name="email" type="email" autocomplete="email" required aria-describedby="eEmail">
+              <span class="err" id="eEmail">Enter a work email, such as name@company.com.</span>
+            </div>
+            <button class="btn" type="submit">Book a pilot</button>
+          </form>
+          <div class="sent" role="status" tabindex="-1">
+            <h3>Pilot request received.</h3>
+            <p>Ines or Kwame will reply within one working day with two times for a first call.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="cols">
+      <div class="about">
+        <a class="wm" href="#top"><i aria-hidden="true"></i>Upshot</a>
+        <p>Upshot Labs builds agents for operations, support and sales teams.</p>
+      </div>
+      <div><h3>Product</h3><ul><li><a href="#proof">Proof</a></li><li><a href="#pricing">Pricing</a></li></ul></div>
+      <div><h3>Company</h3><ul><li><a href="#pilot">How a pilot works</a></li><li><a href="#faq">Questions</a></li></ul></div>
+      <div><h3>Start</h3><ul><li><a href="#book">Book a pilot</a></li></ul></div>
+    </div>
+    <div class="base"><span>© 2026 Upshot Labs Ltd</span><span class="status">All systems running</span></div>
+  </div>
+</footer>
+
+<script src="lenis.min.js"></script>
+<script src="site.js"></script>
+</body>
+</html>
